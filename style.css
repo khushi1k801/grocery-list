@@ -1,0 +1,166 @@
+* { 
+    margin :0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #E8F5E9; /* Light Mint */
+}
+
+.to-do {
+    width: 100%;
+    max-width: 540px;
+    background-color: #FFFFFF; /* Clean white card */
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.to-do h2 {
+    color: #388E3C; /* Forest Green */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.85rem;
+}
+
+.to-do h2 i {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #C8E6C9; /* Pale Gray Green */
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #388E3C; /* Forest Green */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2E7D32; /* Slightly darker green */
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #333333;
+}
+
+ul li::before {
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #757575;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #E57373; /* Muted Red */
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+ul li span:hover {
+    background-color: #FFCDD2; /* Light red hover */
+}
+
+@media (max-width: 600px) {
+    .to-do {
+        padding: 30px 20px 50px;
+    }
+
+    .to-do h2 {
+        font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px;
+    }
+
+    input {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    ul li {
+        font-size: 15px;
+        padding: 10px 8px 10px 40px;
+    }
+
+    ul li::before {
+        top: 10px;
+        left: 5px;
+    }
+
+    ul li span {
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
