@@ -8,13 +8,13 @@
     width: 100%;
     min-height: 100vh;
     padding: 10px;
-    background-color: #E8F5E9; /* Light Mint */
+    background-color: #E8F5E9; 
 }
 
 .to-do {
     width: 100%;
     max-width: 540px;
-    background-color: #FFFFFF; /* Clean white card */
+    background-color: #FFFFFF; 
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -22,7 +22,7 @@
 }
 
 .to-do h2 {
-    color: #388E3C; /* Forest Green */
+    color: #388E3C; 
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -38,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #C8E6C9; /* Pale Gray Green */
+    background-color: #C8E6C9;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -58,7 +58,7 @@ button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: #388E3C; /* Forest Green */
+    background-color: #388E3C; 
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-    background-color: #2E7D32; /* Slightly darker green */
+    background-color: #2E7D32; 
 }
 
 ul li {
@@ -109,7 +109,7 @@ ul li span {
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #E57373; /* Muted Red */
+    color: #E57373;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
@@ -117,7 +117,7 @@ ul li span {
 }
 
 ul li span:hover {
-    background-color: #FFCDD2; /* Light red hover */
+    background-color: #FFCDD2; 
 }
 
 @media (max-width: 600px) {
